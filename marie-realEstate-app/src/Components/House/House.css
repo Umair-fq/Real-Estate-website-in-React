@@ -1,0 +1,67 @@
+/* House.css */
+.house {
+    border: 1px solid #e1e1e1;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+  }
+  
+  .house img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .house > div:not(:first-child) {
+    padding: 15px;
+  }
+  
+  .house-type-country {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .house-address {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .flex-gap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .flex-gap div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .text-icon {
+    color: #4a69bd; /* Example color for icons */
+    font-size: 1.2rem;
+  }
+  
+  .house-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e76f51; /* Example color for price */
+    margin-top: auto; /* Pushes the price to the bottom */
+    padding: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .house {
+      margin-bottom: 20px;
+    }
+  }
+  

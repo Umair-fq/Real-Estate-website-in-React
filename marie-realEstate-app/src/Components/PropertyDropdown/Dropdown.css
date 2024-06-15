@@ -1,0 +1,62 @@
+/* DropdownStyles.css */
+
+.dropdown {
+    position: relative;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Maximum width */
+    margin: 10px; /* Spacing around dropdowns */
+  }
+  
+  .dropdown-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 2px solid #d1d5db;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-icon-primary {
+    margin-right: 0.5rem;
+    color: #4b5563; /* Adjust icon color */
+  }
+  
+  .dropdown-icon-secondary {
+    margin-left: auto; /* Push icon to the end */
+    color: #9ca3af; /* Adjust icon color */
+  }
+  
+  .menu-items {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0.375rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0.125rem;
+    z-index: 1000;
+    max-height: 300px; /* Set a max-height for scroll */
+    overflow-y: auto; /* Enable scroll if too many items */
+  }
+  
+  .menu-item {
+    padding: 0.5rem 1rem;
+    color: #111827;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .menu-item:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Responsive dropdown menu container */
+  @media (max-width: 768px) {
+    .dropdown {
+      max-width: none; /* On smaller screens, dropdowns can expand */
+    }
+  }
+  

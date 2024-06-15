@@ -1,0 +1,52 @@
+.banner {
+    position: relative;
+    width: 100%;
+    margin-top: 60px; /* Adjust based on navbar height */
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto; /* Ensures the full image is displayed */
+    display: block;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-text {
+    color: #fff; /* Change for entrancing colors */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .banner-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #4a69bd; /* Example of an entrancing color */
+  }
+  
+  .banner-text p {
+    font-size: 1.5rem;
+    color: #f8c291; /* Another entrancing color */
+  }
+  
+  @media (max-width: 768px) {
+    .banner-text h1 {
+      font-size: 2rem;
+    }
+  
+    .banner-text p {
+      font-size: 1rem;
+    }
+  }
+  

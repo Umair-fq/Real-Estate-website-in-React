@@ -1,0 +1,48 @@
+.search-container {
+    display: flex;
+    align-items: center; /* This will vertically center-align the items */
+    justify-content: space-between; /* This will place equal space between items */
+    padding: 6px 30px;
+    max-width: 1170px;
+    margin: auto;
+    gap: 4px;
+  }
+  
+  
+  .search-container.lg {
+    flex-direction: row;
+    gap: 3px;
+    top: -4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
+  
+  .search-button {
+    padding: 12px 24px; /* Add more padding for a larger button */
+    border: none; /* Removes the default border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #8b5cf6; /* Violet background */
+    color: white; /* White text */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    outline: none; /* Removes the focus outline */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background and transform transition */
+  }
+  
+  .search-button:hover, .search-button:focus {
+    background-color: #6d28d9; /* A darker violet on hover or focus */
+    transform: scale(1.05); /* Slightly enlarges the button on hover or focus */
+  }
+  .search-button svg {
+    width: 24px; /* Sets the size of the icon */
+    height: 24px; /* Sets the size of the icon */
+  }
+
+  .dropdown {
+    border: 1px solid #ddd; /* Adds a subtle border */
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
